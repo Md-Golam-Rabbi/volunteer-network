@@ -11,6 +11,10 @@
     <!-- Styles -->
 </head>
 <body >
+    @if (Auth::user())
+    {{-- {{ Redirect::to('home') }} --}}
+    <script>window.location = "/home";</script>
+    @endif
     <div class="bg-image" style="background-image: url({{url('images/see.jpg')}});
     background-size: cover;
       position: absolute;
